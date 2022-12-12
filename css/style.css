@@ -48,6 +48,21 @@ header {
   width: 100%;
 }
 
+footer {
+  width: 100%;
+  background-color: #34558b;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -72,4 +87,31 @@ header {
 
 .logo-wrap {
   margin: 0px 65px;
+}
+
+/*OFFER*/
+
+.offer {
+  width: 100%;
+  padding: 65px 0px;
+}
+
+.offer__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.offer__text-block {
+}
+
+.offer__subtitle {
+}
+
+.offer__img {
+}
+
+.footer__content {
+  display: flex;
+  width: 100%;
 }
