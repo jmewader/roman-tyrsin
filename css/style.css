@@ -103,12 +103,35 @@ main {
 }
 
 .offer__text-block {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.offer__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #34558b;
+  margin-bottom: 25px;
 }
 
 .offer__subtitle {
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  margin-bottom: 28px;
+}
+
+.offer__text {
+  font-size: 24px;
 }
 
 .offer__img {
+  display: flex;
+  justify-content: center;
+  width: 60%;
 }
 
 /*FOOTER*/
