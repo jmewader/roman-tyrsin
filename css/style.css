@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "CirceRounded";
+  font-style: bold;
+  font-weight: 700;
+  src: url("/fonts/CirceRounded-Regular3.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CirceRounded";
+  font-style: bold;
+  font-weight: 500;
+  src: url("/fonts/CirceRounded-Regular4.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CirceRounded";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/CirceRounded-Regular.woff") format("woff");
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  color: #000;
+  font-family: "CirceRounded", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.nav {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 40px 0px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__item {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo-wrap {
+  margin: 0px 65px;
+}
