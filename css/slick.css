@@ -1,0 +1,59 @@
+/*SLIDER*/
+.slick-track {
+  display: flex;
+}
+.slick-list {
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider-block {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 75px 0 30px;
+}
+
+.slider .slider__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider .slider__item-img img {
+  width: 100%;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.slider .slick-arrow:hover {
+  opacity: 0.8;
+}
+.slider .slick-arrow.prev {
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 100%;
+}
+.slider .slick-arrow.next {
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  border-radius: 100%;
+}
