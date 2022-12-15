@@ -36,6 +36,11 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  transition: 0.25s;
+}
+
+a:hover {
+  color: inherit;
 }
 
 ul,
@@ -551,7 +556,7 @@ main {
   list-style: none;
   display: grid;
   width: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
 }
 
@@ -569,7 +574,7 @@ main {
 }
 
 .partners__list-logo {
-  width: 100px;
+  width: 106px;
 }
 
 .partners__list-logo img {
@@ -617,6 +622,7 @@ main {
 }
 
 .info-block__info {
+  width: 50%;
   padding: 60px 0 60px;
 }
 
@@ -650,6 +656,7 @@ main {
 }
 
 .info-block__img {
+  width: 50%;
 }
 
 .info-block__img img {

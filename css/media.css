@@ -110,6 +110,14 @@
     padding: 30px 0px 30px;
   }
 
+  .info-block__info {
+    width: 100%;
+  }
+
+  .info-block__img {
+    width: 100%;
+  }
+
   .footer__content {
     grid-template-columns: 1fr;
     align-items: center;
