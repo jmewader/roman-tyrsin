@@ -244,6 +244,10 @@ main {
   align-items: center;
 }
 
+.footer__btn:hover {
+  color: #fff;
+}
+
 .paragraf {
   color: #fff;
   line-height: 1.35;
@@ -619,6 +623,7 @@ main {
   display: flex;
   width: 100%;
   align-items: flex-start;
+  gap: 50px;
 }
 
 .info-block__info {
