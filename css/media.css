@@ -1,21 +1,131 @@
 @media (max-width: 1000px) {
-    main {
-        padding: 72px 0 0;
-    }
+  main {
+    padding: 72px 0 0;
+  }
 
-    .header-desktop {
-        display: none;
-    }
+  .main-subtitle {
+    margin: 0 0 20px;
+  }
 
-    .header-mobile {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        width: 100%;
-        z-index: 100;
-    }
+  .description {
+    margin: 0 0 45px;
+    font-size: 20px;
+  }
 
-    .logo-wrap {
-        margin: 15px 0;
-    }
+  .header-desktop {
+    display: none;
+  }
+
+  .header-mobile {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .logo-wrap {
+    margin: 15px 0;
+  }
+
+  .offer__content {
+    flex-direction: column;
+  }
+
+  .offer__text-block {
+    width: 100%;
+  }
+
+  .offer__img {
+    width: 100%;
+  }
+
+  .marquee-block__content,
+  .marquee-block__content_two {
+    font-size: 18px;
+    line-height: 1.45;
+  }
+
+  .numbers-block {
+    padding: 60px 0px;
+  }
+
+  .numbers-block__list,
+  .cards__list,
+  .benefits__cols {
+    grid-template-columns: 1fr;
+  }
+
+  .numbers-block__list-number {
+    font-size: 48px;
+  }
+
+  .numbers-block__list-text {
+    font-size: 16px;
+  }
+
+  .block-with-points__content {
+    flex-direction: column;
+  }
+
+  .block-with-points__info,
+  .block-with-points__img {
+    width: 100%;
+  }
+
+  .benefits__list-text {
+    order: 1;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .benefits__list-item {
+    gap: 20px;
+  }
+
+  .benefits__list-text span {
+    font-size: 22px;
+  }
+
+  .benefits__cols-img {
+    max-width: 450px;
+    margin: 30px auto;
+  }
+
+  .partners__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .quote__text {
+    font-size: 36px;
+  }
+
+  .info-block__content {
+    flex-direction: column;
+  }
+
+  .info-block__info {
+    order: 1;
+    padding: 30px 0px 30px;
+  }
+
+  .footer__content {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .footer__item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .partners__list {
+    grid-template-columns: 1fr 1fr;
+  }
 }

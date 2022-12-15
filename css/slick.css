@@ -21,6 +21,10 @@
   padding: 75px 0 60px;
 }
 
+.slider__item-img {
+  max-width: 300px;
+}
+
 .title-slider {
   text-transform: uppercase;
   margin: 0 0 90px;

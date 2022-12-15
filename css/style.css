@@ -9,7 +9,7 @@
   font-family: "CirceRounded";
   font-style: bold;
   font-weight: 500;
-  src: url("/fonts/CirceRounded-Regular4.woff") format("woff");
+  src: url("/fonts/CirceRounded-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -123,7 +123,7 @@ main {
   width: 100%;
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 1%;
   padding: 40px 0px;
   justify-content: space-between;
   align-items: center;
@@ -157,7 +157,7 @@ main {
 
 .offer {
   width: 100%;
-  padding: 65px 0px;
+  padding: 65px 0px 0px;
 }
 
 .offer__content {
@@ -371,6 +371,7 @@ main {
   color: #fff;
   margin: 0 0 28px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .cards__list-img {
@@ -599,6 +600,7 @@ main {
   line-height: 1.23;
   color: #fff;
   font-weight: 700;
+  margin: 0;
 }
 
 /*INFO-BLOCK*/
