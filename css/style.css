@@ -38,8 +38,18 @@ a {
   text-decoration: none;
 }
 
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   width: 100%;
+}
+
+.header-mobile {
+  display: none;
 }
 
 footer {
@@ -116,6 +126,21 @@ main {
   gap: 30px;
   padding: 40px 0px;
   justify-content: space-between;
+  align-items: center;
+}
+
+.nav-mobile {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav__wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
   align-items: center;
 }
 
