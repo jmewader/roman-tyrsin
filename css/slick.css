@@ -74,13 +74,10 @@
   left: 0;
   width: 40px;
   height: 40px;
-  background-color: #000;
-  border-radius: 100%;
+  transform: rotateY(180deg);
 }
 .slider .slick-arrow.next {
   right: 0;
   width: 40px;
   height: 40px;
-  background-color: #000;
-  border-radius: 100%;
 }

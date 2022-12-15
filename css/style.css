@@ -2,7 +2,7 @@
   font-family: "CirceRounded";
   font-style: bold;
   font-weight: 700;
-  src: url("/fonts/CirceRounded-Regular2.woff") format("woff");
+  src: url("/fonts/CirceRounded-Regular3.woff") format("woff");
 }
 
 @font-face {
@@ -31,12 +31,6 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Oswald", sans-serif;
 }
 
 a {
@@ -232,6 +226,7 @@ main {
 .marquee-block {
   overflow: hidden;
   display: flex;
+  position: relative;
   align-items: center;
   width: 100%;
   background-color: rgb(44, 90, 252);
@@ -242,20 +237,39 @@ main {
   font-size: 22px;
   color: #fff;
   white-space: nowrap;
-  animation: marquee 30.5s infinite linear;
+  animation: marquee 8s linear infinite;
+}
+
+.marquee-block__content {
+  left: 100%;
 }
 
 .marquee-block__content:after {
   content: "Программы, которые работают⠀•⠀Программы, которые работают⠀•⠀Программы, которые работают⠀•⠀Программы, которые работают⠀•⠀Программы, которые работают⠀•⠀";
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
+.marquee-block__content_two {
+  font-size: 22px;
+  color: #fff;
+  white-space: nowrap;
+  animation: marquee 8s linear infinite;
+}
 
-  100% {
-    transform: translateX(-50%);
+.marquee-block__content_two {
+  left: 100%;
+}
+
+.marquee-block__content_two {
+  left: 100%;
+}
+
+.marquee-block__content_two:after {
+  content: "Хватит мечтать, пора делать⠀•⠀Хватит мечтать, пора делать⠀•⠀Хватит мечтать, пора делать⠀•⠀Хватит мечтать, пора делать⠀•⠀Хватит мечтать, пора делать⠀•⠀";
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-10%);
   }
 }
 
