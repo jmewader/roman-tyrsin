@@ -112,7 +112,13 @@ main {
   font-weight: 700;
   color: #34558b;
   margin: 0 0 40px;
-  text-transform: uppercase;
+}
+
+.main-subtitle-page {
+  font-size: 26px;
+  line-height: 1.35;
+  font-weight: 700;
+  color: #34558b;
 }
 
 .btn {
@@ -134,8 +140,36 @@ main {
   background-color: #d50101;
 }
 
+.blue-btn {
+  min-height: 58px;
+  min-width: 153px;
+  color: #ffffff;
+  background-color: #34558b;
+  border-radius: 30px;
+  border: none;
+  font-weight: 700;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.blue-btn:hover {
+  color: #fff;
+  background-color: #1e3b6a;
+}
+
 .link {
   color: #1c1cdb;
+}
+
+.input {
+  color: #34558b;
+  border: 1px solid #34558b;
+  height: 58px;
+  background-color: transparent;
+  padding: 0 20px;
+  font-size: 16px;
+  line-height: 1.33;
+  border-radius: 0;
 }
 
 .description {
