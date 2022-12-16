@@ -61,3 +61,32 @@
   position: absolute;
   background-color: #fff;
 }
+
+.accordion {
+  list-style: none;
+}
+
+.accordion-button {
+  font-size: 26px;
+  line-height: 1.35;
+  font-weight: 700;
+  color: #34558b;
+}
+
+.accordion-item {
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.accordion-item:not(:first-of-type) {
+  border-top: 1px solid #eee;
+}
+
+.accordion-item:last-child {
+  border-bottom: 1px solid #eee;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #fff;
+  color: #34558b;
+}

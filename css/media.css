@@ -97,6 +97,10 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .partners__list-item {
+    border-right: none;
+  }
+
   .quote__text {
     font-size: 36px;
   }

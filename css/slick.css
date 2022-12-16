@@ -61,6 +61,12 @@
   border: none;
   text-transform: uppercase;
   cursor: pointer;
+  transition: 0.25s;
+}
+
+.slider__item-btn:hover {
+  color: #fff;
+  background-color: #d50101;
 }
 
 .slider .slick-arrow {
