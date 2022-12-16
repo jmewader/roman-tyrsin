@@ -1,0 +1,28 @@
+.faq {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 60px 0 135px;
+}
+
+.faq__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.faq__img {
+  cursor: pointer;
+}
+
+.faq__img img {
+  width: 100%;
+}
