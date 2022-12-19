@@ -36,7 +36,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-  transition: 0.25s;
 }
 
 a:focus {
@@ -219,6 +218,10 @@ main {
   text-transform: uppercase;
 }
 
+.nav__item:hover {
+  color: #34558b;
+}
+
 .logo-wrap {
   margin: 0px 65px;
 }
@@ -299,6 +302,10 @@ main {
   font-size: 14px;
 }
 
+.footer__list-item:hover {
+  color: #000000;
+}
+
 .footer__btn {
   display: flex;
   justify-content: flex-end;
@@ -318,6 +325,32 @@ main {
   line-height: 1.35;
   font-size: 14px;
   font-weight: 700;
+}
+
+/*TABS*/
+
+.tabs {
+  display: flex;
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  list-style: none;
+}
+
+.tabs__item {
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #1c1cdb;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.tabs__item:hover {
+  background-color: #333;
+  color: #fff;
 }
 
 /*MARQUEE-BLOCK*/
@@ -463,6 +496,23 @@ main {
   color: #fff;
   font-size: 20px;
   line-height: 25px;
+}
+
+/*BIG-CARDS*/
+
+.big-cards {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.big-cards-item {
+  min-width: 370px;
+  height: 370px;
+  display: flex;
 }
 
 /*BLOCK-WITH-POINTS*/
