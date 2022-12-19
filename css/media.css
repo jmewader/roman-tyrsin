@@ -147,6 +147,20 @@
   }
 }
 
+@media (max-width: 700px) {
+  .main-subtitle-page {
+    font-size: 22px;
+  }
+
+  .input {
+    height: 50px;
+  }
+
+  .blue-btn {
+    min-height: 50px;
+  }
+}
+
 @media (max-width: 450px) {
   .partners__list {
     grid-template-columns: 1fr 1fr;

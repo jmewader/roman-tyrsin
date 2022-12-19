@@ -142,10 +142,16 @@
 }
 
 @media (max-width: 700px) {
+  .news-block__wrap {
+    padding: 25px 20px 25px;
+  }
+
   .feedback__title {
     font-size: 30px;
     margin: 0 0 24px;
   }
+
+  .feedback {
+    padding: 75px 20px 90px;
+  }
 }
-
-
