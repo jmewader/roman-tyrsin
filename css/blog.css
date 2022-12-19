@@ -104,7 +104,14 @@
   align-items: center;
   width: 100%;
   background-color: #f0f0f0;
-  padding: 75px 90px;
+  padding: 75px 30px 90px;
+}
+
+.feedback__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 630px;
 }
 
 .feedback__wrap {
@@ -112,7 +119,7 @@
   width: 100%;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .feedback__title {
@@ -128,4 +135,17 @@
   .blog__list {
     grid-template-columns: 1fr;
   }
+
+  .feedback__wrap {
+    flex-direction: column;
+  }
 }
+
+@media (max-width: 700px) {
+  .feedback__title {
+    font-size: 30px;
+    margin: 0 0 24px;
+  }
+}
+
+
