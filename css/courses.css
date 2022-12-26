@@ -92,6 +92,7 @@
 /*products*/
 .products {
   width: 100%;
+  margin: 20px 0px 0px;
 }
 
 .products__list {
