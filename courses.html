@@ -66,45 +66,317 @@
             <p class="description">Программы разделены на блоки по специализации для вашего удобства</p>
 
             <ul class="tabs">
-              <li class="tabs__item"><a>Для руководителя</a></li>
-              <li class="tabs__item"><a>Для команды</a></li>
-              <li class="tabs__item"><a>Для администратора</a></li>
-              <li class="tabs__item"><a>Для мастера (специалиста)</a></li>
-              <li class="tabs__item"><a>Для дистрибьюторов</a></li>
+              <li data-tab="tab-1" class="tabs__item"><a href="#dlya-rukovoditelya">Для руководителя</a></li>
+              <li data-tab="tab-2" class="tabs__item"><a>Для команды</a></li>
+              <li data-tab="tab-3" class="tabs__item"><a>Для администратора</a></li>
+              <li data-tab="tab-4" class="tabs__item"><a>Для мастера (специалиста)</a></li>
+              <li data-tab="tab-5" class="tabs__item"><a>Для дистрибьюторов</a></li>
             </ul>
 
-            <ul class="big-cards">
-              <li class="big-cards__item">
-                <div class="big-cards__wrap">
-                  <div class="big-cards__image"><img src="./img/people/c-1.jpg" alt="photo" /></div>
-                  <a class="big-cards__item-text">Для руководителя</a>
+            <div class="tabs__content">
+              <div id="tab-home" class="tabs__content-item">
+                <ul class="big-cards">
+                  <li class="big-cards__item">
+                    <div class="big-cards__wrap">
+                      <div class="big-cards__image"><img src="./img/people/c-1.jpg" alt="photo" /></div>
+                      <a class="big-cards__item-text">Для руководителя</a>
+                    </div>
+                  </li>
+                  <li class="big-cards__item">
+                    <div class="big-cards__wrap">
+                      <img src="./img/people/c-2.jpg" alt="photo" />
+                      <a class="big-cards__item-text">Для команды</a>
+                    </div>
+                  </li>
+                  <li class="big-cards__item">
+                    <div class="big-cards__wrap">
+                      <img src="./img/people/c-3.jpg" alt="photo" />
+                      <a class="big-cards__item-text">Для администратора</a>
+                    </div>
+                  </li>
+                  <li class="big-cards__item">
+                    <div class="big-cards__wrap">
+                      <img src="./img/people/c-4.jpg" alt="photo" />
+                      <a class="big-cards__item-text">Для мастера (специалиста)</a>
+                    </div>
+                  </li>
+                  <li class="big-cards__item">
+                    <div class="big-cards__wrap">
+                      <img src="./img/people/c-5.jpg" alt="photo" />
+                      <a class="big-cards__item-text">Для дистрибьюторов</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div id="tab-1" class="tabs__content-item hidden">
+                <h2 class="tabs__content-title">Для руководителя</h2>
+                <div class="breadcrumbs">
+                  <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item"><a href="#">Магазин</a></li>
+                    <li class="breadcrumbs__list-item"><a href="#">Для руководителя</a></li>
+                  </ul>
                 </div>
-              </li>
-              <li class="big-cards__item">
-                <div class="big-cards__wrap">
-                  <img src="./img/people/c-2.jpg" alt="photo" />
-                  <a class="big-cards__item-text">Для команды</a>
+
+                <h3 class="tabs__content-subtitle">Программы для руководителей салонов красоты, клиник и СПА</h3>
+
+                <div class="products">
+                  <ul class="products__list">
+                    <li class="products__list-item">
+                      <div class="products__list-item-flag flag-blue">Онлайн</div>
+
+                      <div class="products__list-item-image">
+                        <img src="./img/courses/2839996364.jpg" alt="КОЛЕСО УСПЕХА" />
+                      </div>
+
+                      <div class="products__list-item-wrap">
+                        <div class="products__list-item-top">
+                          <span class="products__list-item-title">КОЛЕСО УСПЕХА</span>
+                          <p class="products__list-item-text">Комплексная программа поддержки, обучения и сопровождения руководителя на пути к успеху</p>
+                        </div>
+                        <div class="products__list-item-bottom">
+                          <span class="products__list-item-price">24 500₽</span>
+                          <button class="btn-transparent">В корзину</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="products__list-item">
+                      <div class="products__list-item-flag flag-red">Оффлайн</div>
+
+                      <div class="products__list-item-image">
+                        <img src="./img/courses/2839996364.jpg" alt="КОЛЕСО УСПЕХА" />
+                      </div>
+
+                      <div class="products__list-item-wrap">
+                        <div class="products__list-item-top">
+                          <span class="products__list-item-title">СЕРВИС БУДУЩЕГО</span>
+                          <p class="products__list-item-text">Программа для будущего развития и роста вашего салона красоты</p>
+                        </div>
+                        <div class="products__list-item-bottom">
+                          <span class="products__list-item-price">7 500₽</span>
+                          <button class="btn-transparent">В корзину</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="products__list-item">
+                      <div class="products__list-item-flag flag-pink">Пособия</div>
+
+                      <div class="products__list-item-image">
+                        <img src="./img/courses/2839996364.jpg" alt="КОЛЕСО УСПЕХА" />
+                      </div>
+
+                      <div class="products__list-item-wrap">
+                        <div class="products__list-item-top">
+                          <span class="products__list-item-title">НАБОР ПОСОБИЙ</span>
+                          <p class="products__list-item-text">Набор из 4-х печатных пособий по специальной цене</p>
+                        </div>
+                        <div class="products__list-item-bottom">
+                          <div class="discount">
+                            <div>
+                              было
+                              <s>6 500</s>
+                            </div>
+                            <div>Скидка 25%</div>
+                          </div>
+                          <span class="products__list-item-price">4 900₽</span>
+                          <button class="btn-transparent">В корзину</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="products__list-item">
+                      <div class="products__list-item-flag flag-blue">Онлайн</div>
+
+                      <div class="products__list-item-image">
+                        <img src="./img/courses/2839996364.jpg" alt="КОЛЕСО УСПЕХА" />
+                      </div>
+
+                      <div class="products__list-item-wrap">
+                        <div class="products__list-item-top">
+                          <span class="products__list-item-title">КОЛЕСО УСПЕХА</span>
+                          <p class="products__list-item-text">Комплексная программа поддержки, обучения и сопровождения руководителя на пути к успеху</p>
+                        </div>
+                        <div class="products__list-item-bottom">
+                          <span class="products__list-item-price">24 500₽</span>
+                          <button class="btn-transparent">В корзину</button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-              </li>
-              <li class="big-cards__item">
-                <div class="big-cards__wrap">
-                  <img src="./img/people/c-3.jpg" alt="photo" />
-                  <a class="big-cards__item-text">Для администратора</a>
+              </div>
+
+              <div id="tab-2" class="tabs__content-item hidden">
+                <h2 class="tabs__content-title">Для команды</h2>
+                <div class="breadcrumbs">
+                  <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item"><a href="#">Магазин</a></li>
+                    <li class="breadcrumbs__list-item"><a href="#">Для команды</a></li>
+                  </ul>
                 </div>
-              </li>
-              <li class="big-cards__item">
-                <div class="big-cards__wrap">
-                  <img src="./img/people/c-4.jpg" alt="photo" />
-                  <a class="big-cards__item-text">Для мастера (специалиста)</a>
+
+                <h3 class="tabs__content-subtitle">Программы для руководителей салонов красоты, клиник и СПА</h3>
+                <p class="tabs__content-description">Оффлайн или онлайн тренинги и курсы для всего персонала</p>
+
+                <div class="products">
+                  <ul class="products__list">
+                    <li class="products__list-item">
+                      <div class="products__list-item-flag flag-blue">Онлайн</div>
+
+                      <div class="products__list-item-image">
+                        <img src="./img/courses/2839996364.jpg" alt="КОЛЕСО УСПЕХА" />
+                      </div>
+
+                      <div class="products__list-item-wrap">
+                        <div class="products__list-item-top">
+                          <span class="products__list-item-title">КОЛЕСО УСПЕХА</span>
+                          <p class="products__list-item-text">Комплексная программа поддержки, обучения и сопровождения руководителя на пути к успеху</p>
+                        </div>
+                        <div class="products__list-item-bottom">
+                          <span class="products__list-item-price">24 500₽</span>
+                          <button class="btn-transparent">В корзину</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="products__list-item">
+                      <div class="products__list-item-flag flag-red">Оффлайн</div>
+
+                      <div class="products__list-item-image">
+                        <img src="./img/courses/2839996364.jpg" alt="КОЛЕСО УСПЕХА" />
+                      </div>
+
+                      <div class="products__list-item-wrap">
+                        <div class="products__list-item-top">
+                          <span class="products__list-item-title">СЕРВИС БУДУЩЕГО</span>
+                          <p class="products__list-item-text">Программа для будущего развития и роста вашего салона красоты</p>
+                        </div>
+                        <div class="products__list-item-bottom">
+                          <span class="products__list-item-price">7 500₽</span>
+                          <button class="btn-transparent">В корзину</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="products__list-item">
+                      <div class="products__list-item-flag flag-pink">Пособия</div>
+
+                      <div class="products__list-item-image">
+                        <img src="./img/courses/2839996364.jpg" alt="КОЛЕСО УСПЕХА" />
+                      </div>
+
+                      <div class="products__list-item-wrap">
+                        <div class="products__list-item-top">
+                          <span class="products__list-item-title">НАБОР ПОСОБИЙ</span>
+                          <p class="products__list-item-text">Набор из 4-х печатных пособий по специальной цене</p>
+                        </div>
+                        <div class="products__list-item-bottom">
+                          <div class="discount">
+                            <div>
+                              было
+                              <s>6 500</s>
+                            </div>
+                            <div>Скидка 25%</div>
+                          </div>
+                          <span class="products__list-item-price">4 900₽</span>
+                          <button class="btn-transparent">В корзину</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="products__list-item">
+                      <div class="products__list-item-flag flag-blue">Онлайн</div>
+
+                      <div class="products__list-item-image">
+                        <img src="./img/courses/2839996364.jpg" alt="КОЛЕСО УСПЕХА" />
+                      </div>
+
+                      <div class="products__list-item-wrap">
+                        <div class="products__list-item-top">
+                          <span class="products__list-item-title">КОЛЕСО УСПЕХА</span>
+                          <p class="products__list-item-text">Комплексная программа поддержки, обучения и сопровождения руководителя на пути к успеху</p>
+                        </div>
+                        <div class="products__list-item-bottom">
+                          <span class="products__list-item-price">24 500₽</span>
+                          <button class="btn-transparent">В корзину</button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-              </li>
-              <li class="big-cards__item">
-                <div class="big-cards__wrap">
-                  <img src="./img/people/c-5.jpg" alt="photo" />
-                  <a class="big-cards__item-text">Для дистрибьюторов</a>
+              </div>
+
+              <div id="tab-3" class="tabs__content-item hidden">
+                <h2 class="tabs__content-title">Для администратора</h2>
+                <div class="breadcrumbs">
+                  <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item"><a href="#">Магазин</a></li>
+                    <li class="breadcrumbs__list-item"><a href="#">Для администратора</a></li>
+                  </ul>
                 </div>
-              </li>
-            </ul>
+
+                <ul class="big-cards">
+                  <li class="big-cards__item">
+                    <div class="big-cards__wrap">
+                      <img src="./img/people/c-3.jpg" alt="photo" />
+                      <a class="big-cards__item-text">Для администратора</a>
+                    </div>
+                  </li>
+                  <li class="big-cards__item">
+                    <div class="big-cards__wrap">
+                      <img src="./img/people/c-4.jpg" alt="photo" />
+                      <a class="big-cards__item-text">Для мастера (специалиста)</a>
+                    </div>
+                  </li>
+                  <li class="big-cards__item">
+                    <div class="big-cards__wrap">
+                      <img src="./img/people/c-5.jpg" alt="photo" />
+                      <a class="big-cards__item-text">Для дистрибьюторов</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div id="tab-4" class="tabs__content-item hidden">
+                <h2 class="tabs__content-title">Для мастера (специалиста)</h2>
+                <div class="breadcrumbs">
+                  <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item"><a href="#">Магазин</a></li>
+                    <li class="breadcrumbs__list-item"><a href="#">Для мастера (специалиста)</a></li>
+                  </ul>
+                </div>
+
+                <ul class="big-cards">
+                  <li class="big-cards__item">
+                    <div class="big-cards__wrap">
+                      <img src="./img/people/c-5.jpg" alt="photo" />
+                      <a class="big-cards__item-text">Для дистрибьюторов</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div id="tab-5" class="tabs__content-item hidden">
+                <h2 class="tabs__content-title">Для дистрибьюторов</h2>
+                <div class="breadcrumbs">
+                  <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item"><a href="#">Магазин</a></li>
+                    <li class="breadcrumbs__list-item"><a href="#">Для дистрибьюторов</a></li>
+                  </ul>
+                </div>
+
+                <ul class="big-cards">
+                  <li class="big-cards__item">
+                    <div class="big-cards__wrap">
+                      <img src="./img/people/c-4.jpg" alt="photo" />
+                      <a class="big-cards__item-text">Для мастера (специалиста)</a>
+                    </div>
+                  </li>
+                  <li class="big-cards__item">
+                    <div class="big-cards__wrap">
+                      <img src="./img/people/c-5.jpg" alt="photo" />
+                      <a class="big-cards__item-text">Для дистрибьюторов</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
 

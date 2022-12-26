@@ -19,6 +19,27 @@
   src: url("/fonts/CirceRounded-Regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: "RTRootUI";
+  font-style: bold;
+  font-weight: 700;
+  src: url("/fonts/RTRootUI-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "RTRootUI";
+  font-style: bold;
+  font-weight: 500;
+  src: url("/fonts/RTRootUI-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "RTRootUI";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/RTRootUI-Regular.woff") format("woff");
+}
+
 html,
 body {
   height: 100%;
@@ -80,6 +101,10 @@ main {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.hidden {
+  display: none;
 }
 
 .container {
@@ -156,6 +181,35 @@ main {
   background-color: #1e3b6a;
 }
 
+.btn-transparent {
+  display: flex;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  font-family: "RTRootUI", sans-serif;
+  min-width: 167px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  word-wrap: break-word;
+  color: #000;
+  border-radius: 3px;
+  outline: none;
+  box-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  font-weight: 500;
+  transition: background-color 0.12s ease-out 0s, color 0.12s ease-out 0s, border-color 0.12s ease-out 0s, box-shadow 0.12s ease-out 0s, transform 0.05s ease-out 0s, opacity 0.2s ease-out 0s;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  border-color: #b3b3b3;
+  background-color: #f2f2f2;
+}
+
+.btn-transparent:active {
+  box-shadow: 0 0 0 rgb(0 0 0 / 0%);
+  transform: translate3d(0, 1px, 0);
+}
+
 .link {
   color: #1c1cdb;
 }
@@ -186,6 +240,39 @@ main {
   font-size: 26px;
   line-height: 1.5;
   margin: 0 0 105px;
+}
+
+.discount {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+/*breadcrumbs*/
+
+.breadcrumbs {
+  width: 100%;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  list-style: none;
+}
+
+.breadcrumbs__list-item {
+  color: #757575;
+  transition: color 0.12s ease-out 0s;
+  font-size: 17px;
+  font-family: "RTRootUI", sans-serif;
+}
+
+.breadcrumbs__list-item::after {
+  content: "/";
+  padding: 0px 10px;
+}
+
+.breadcrumbs__list-item:last-child::after {
+  content: "";
 }
 
 .nav {
@@ -352,6 +439,31 @@ main {
 .tabs__item:hover {
   background-color: #333;
   color: #fff;
+}
+
+.tabs__content {
+  width: 100%;
+}
+
+.tabs__content-item {
+  margin: 20px 0px 20px;
+}
+
+.tabs__content-title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.3;
+  font-family: "RTRootUI", sans-serif;
+}
+
+.tabs__content-subtitle {
+  font-size: 26px;
+  font-weight: 500;
+  padding: 20px 0px 0px;
+  font-family: "RTRootUI", sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 /*USER-BLOCK*/

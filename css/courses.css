@@ -85,7 +85,121 @@
   line-height: 1.55;
 }
 
-
 .answers {
   padding: 75px 0px 60px;
+}
+
+/*products*/
+.products {
+  width: 100%;
+}
+
+.products__list {
+  list-style: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.products__list-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 10%);
+  transition: box-shadow 0.2s ease 0s, background-color 0.2s ease 0s;
+  position: relative;
+  cursor: pointer;
+}
+
+.products__list-item:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 10%);
+}
+
+.products__list-item-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: 20px 16px 16px 22px;
+}
+
+.products__list-item-top {
+  width: 100%;
+}
+
+.products__list-item-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.products__list-item-image {
+  width: 100%;
+  display: flex;
+}
+
+.products__list-item-image img {
+  width: 100%;
+}
+
+.products__list-item-title {
+  font-size: 20px;
+  min-height: 1.3em;
+  color: #000;
+  font-weight: 600;
+  font-family: "Root UI", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", Arial, sans-serif;
+}
+
+.products__list-item:hover .products__list-item-title {
+  color: #1c1cdb;
+}
+
+.tabs__content-description {
+  display: flex;
+  font-size: 16px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.products__list-item-text {
+  margin: 0;
+  color: #757575;
+}
+
+.products__list-item-price {
+  width: 100%;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.products__list-item-flag {
+  padding: 0.1em 0.5em 0;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.flag-blue {
+  background-color: rgb(82, 113, 255);
+}
+
+.flag-red {
+  background-color: rgb(237, 14, 14);
+}
+
+.flag-pink {
+  background-color: rgb(241, 17, 215);
 }

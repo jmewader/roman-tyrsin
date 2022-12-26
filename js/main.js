@@ -23,8 +23,24 @@ $(".slider").slick({
   ]
 });
 
-//menu-mobile
-document.querySelector(".second-button").addEventListener("click", function () {
-  document.querySelector(".animated-icon2").classList.toggle("open");
-});
+//tabs
+const tabsItem = document.querySelectorAll('.tabs__item');
+const tabsContent = document.querySelectorAll('.tabs__content-item')
 
+function getTabs() {
+  tabsItem.forEach((item) => {
+    item.addEventListener('click', () => {
+
+      tabsContent.forEach((item)=> {
+        item.classList.add('hidden')
+      })
+
+
+      const content = document.querySelector('#' + item.dataset.tab)
+      console.log(content)
+      content.classList.remove('hidden')
+    })
+  })
+}
+
+getTabs()
