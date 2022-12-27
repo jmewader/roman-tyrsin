@@ -479,6 +479,8 @@ main {
   font-weight: 700;
   font-size: 14px;
   align-items: center;
+  border: none;
+  background-color: transparent;
 }
 
 .footer__btn:hover {
@@ -1091,7 +1093,7 @@ main {
 
 .info-block__info {
   width: 50%;
-  padding: 60px 0 60px;
+  padding: 60px 20px 50px 60px;
 }
 
 .info-block__title {
@@ -1127,10 +1129,13 @@ main {
 
 .info-block__img {
   width: 50%;
+  height: 100%;
 }
 
 .info-block__img img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .social-mini {
