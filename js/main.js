@@ -91,3 +91,21 @@ function outNum(num, elem, step) {
 outNum(14, "out-1", 1);
 outNum(2000, "out-2", 100);
 outNum(20000, "out-3", 1000);
+
+/*кнопка scrollToTop*/
+
+function onScroll() {
+  window.addEventListener("scroll", function () {
+    let scroll = document.querySelector(".btn-top");
+    scroll.classList.toggle("active", window.scrollY > 500);
+  });
+}
+
+onScroll()
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}

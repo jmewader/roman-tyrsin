@@ -248,6 +248,42 @@ main {
   margin: 0 0 20px;
 }
 
+.btn-top {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
+  border-radius: 100%;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.btn-top:hover {
+  background-color: #1c59ff;
+}
+
+.btn-top:hover svg rect {
+  fill: transparent;
+}
+
+.btn-top:hover svg path {
+  stroke: #fff;
+}
+
+.btn-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
 .link {
   color: #1c1cdb;
 }
