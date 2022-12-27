@@ -157,11 +157,44 @@ main {
   font-weight: 700;
   cursor: pointer;
   transition: 0.25s;
+  position: relative;
+  overflow: hidden;
 }
 
 .btn:hover {
   color: #fff;
   background-color: #d50101;
+}
+
+.btn-animations:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 200px;
+  margin-left: 50px;
+  background: #fff;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.5) 100%);
+  left: -40px;
+  top: -100px;
+  z-index: 1;
+  transform: rotate(45deg);
+  position: absolute;
+  animation: movingFlare 3s ease-in-out 0.05s infinite;
+}
+
+@keyframes movingFlare {
+  0% {
+    left: -30px;
+    margin-left: 0px;
+  }
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
 }
 
 .blue-btn {
@@ -208,6 +241,11 @@ main {
 .btn-transparent:active {
   box-shadow: 0 0 0 rgb(0 0 0 / 0%);
   transform: translate3d(0, 1px, 0);
+}
+
+.btn-modal {
+  border: none;
+  margin: 0 0 20px;
 }
 
 .link {
@@ -327,7 +365,7 @@ main {
 }
 
 .offer__text-block {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -358,7 +396,11 @@ main {
 .offer__img {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 30%;
+}
+
+.offer__img img {
+  width: 100%;
 }
 
 /*FOOTER*/

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/media.css" />
     <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/fm.revealator.jquery.min.css">
     <title>Курсы и тренинги по России обучение сотрудников от бизнес коуча Романа Тырсина</title>
   </head>
   <body>
@@ -24,7 +25,7 @@
               <li class="nav__item"><a href="./courses.html">Курсы</a></li>
               <li class="nav__item"><a href="./faq.html">Вопросы-Ответы</a></li>
               <li class="nav__item logo-wrap">
-                <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+                <a href="./index.html"><img src="./img/logo.png" alt="logo" /></a>
               </li>
               <li class="nav__item"><a href="./news.html">Новости</a></li>
               <li class="nav__item"><a href="./blog.html">Блог</a></li>
@@ -35,7 +36,7 @@
 
         <nav class="header-mobile" id="NavBar">
           <div class="nav__wrap">
-            <a class="navbar-brand" href="#">Меню</a>
+            <span class="navbar-brand">Меню</span>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="icon-bar top-bar"></span>
               <span class="icon-bar middle-bar"></span>
@@ -45,14 +46,14 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav nav-mobile">
               <li class="nav__item logo-wrap">
-                <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+                <a href="./index.html"><img src="./img/logo.png" alt="logo" /></a>
               </li>
-              <li class="nav__item"><a href="#">Главная</a></li>
-              <li class="nav__item"><a href="#">Курсы</a></li>
-              <li class="nav__item"><a href="#">Вопросы-Ответы</a></li>
-              <li class="nav__item"><a href="#">Новости</a></li>
-              <li class="nav__item"><a href="#">Блог</a></li>
-              <li class="nav__item"><a href="#">Информация</a></li>
+              <li class="nav__item"><a href="./index.html">Главная</a></li>
+              <li class="nav__item"><a href="./courses.html">Курсы</a></li>
+              <li class="nav__item"><a href="./faq.html">Вопросы-Ответы</a></li>
+              <li class="nav__item"><a href="./news.html">Новости</a></li>
+              <li class="nav__item"><a href="./blog.html">Блог</a></li>
+              <li class="nav__item"><a href="./policy.html">Информация</a></li>
             </ul>
           </div>
         </nav>
@@ -81,17 +82,17 @@
           <div class="container">
             <ul class="numbers-block__list">
               <li class="numbers-block__list-item">
-                <span class="numbers-block__list-number">14</span>
+                <span id="out-1" class="numbers-block__list-number">0</span>
                 <span class="numbers-block__list-text">Лет практики</span>
               </li>
 
               <li class="numbers-block__list-item">
-                <span class="numbers-block__list-number">2 000</span>
+                <span id="out-2" class="numbers-block__list-number">0</span>
                 <span class="numbers-block__list-text">Проведенный тренингов</span>
               </li>
 
               <li class="numbers-block__list-item">
-                <span class="numbers-block__list-number">20 000</span>
+                <span id="out-3" class="numbers-block__list-number">0</span>
                 <span class="numbers-block__list-text">Обученный специалистов</span>
               </li>
             </ul>
@@ -101,19 +102,19 @@
         <section class="cards">
           <div class="container">
             <ul class="cards__list">
-              <li class="cards__list-item">
+              <li class="cards__list-item revealator-zoomin revealator-once">
                 <div class="cards__list-img"><img src="./img/illustrations/illustration1.png" atl="illustration" /></div>
                 <h2 class="cards__list-title">Живое обучение</h2>
                 <p class="cards__list-text">Профессиональные тренинги для персонала с выездом к вам в салон красоты или клинику.</p>
               </li>
 
-              <li class="cards__list-item">
+              <li class="cards__list-item revealator-zoomin revealator-once">
                 <div class="cards__list-img"><img src="./img/illustrations/illustration2.png" atl="illustration" /></div>
                 <h2 class="cards__list-title">Онлайн-программы</h2>
                 <p class="cards__list-text">Дистанционное обучение с максимальной эффективностью в удобном мобильном приложении.</p>
               </li>
 
-              <li class="cards__list-item">
+              <li class="cards__list-item revealator-zoomin revealator-once">
                 <div class="cards__list-img"><img src="./img/illustrations/illustration3.png" atl="illustration" /></div>
                 <h2 class="cards__list-title">Сопровождение</h2>
                 <p class="cards__list-text">Программы для развития вашего бизнеса с комплексным индивидуальным подходом.</p>
@@ -158,24 +159,24 @@
             <div class="block-with-points__content">
               <div class="block-with-points__info">
                 <h2 class="block-with-points__title">Каких результатов вы добьетесь</h2>
-                <span class="block-with-points__text">После обучения</span>
+                <span class="block-with-points__text revealator-slidedown revealator-once revealator-delay1 revealator-once">После обучения</span>
                 <ul class="block-with-points__list">
-                  <li class="block-with-points__list-item">
+                  <li class="block-with-points__list-item revealator-slidedown revealator-once revealator-delay2 revealator-once">
                     <div class="block-with-points__list-icon"><img src="./img/icons/check.svg" alt="check-icon" /></div>
                     <span class="block-with-points__list-text">Удержание каждого клиента за счет отличного сервиса</span>
                   </li>
 
-                  <li class="block-with-points__list-item">
+                  <li class="block-with-points__list-item revealator-slidedown revealator-once revealator-delay2 revealator-once">
                     <div class="block-with-points__list-icon"><img src="./img/icons/check.svg" alt="check-icon" /></div>
                     <span class="block-with-points__list-text">Увеличение потока новых клиентов по "сарафанному радио"</span>
                   </li>
 
-                  <li class="block-with-points__list-item">
+                  <li class="block-with-points__list-item revealator-slidedown revealator-once revealator-delay2 revealator-once">
                     <div class="block-with-points__list-icon"><img src="./img/icons/check.svg" alt="check-icon" /></div>
                     <span class="block-with-points__list-text">Рост дохода вашего салона красоты благодаря высокой лояльности клиентов</span>
                   </li>
 
-                  <li class="block-with-points__list-item">
+                  <li class="block-with-points__list-item revealator-slidedown revealator-once revealator-delay2 revealator-once">
                     <div class="block-with-points__list-icon"><img src="./img/icons/check.svg" alt="check-icon" /></div>
                     <span class="block-with-points__list-text">Рост уровня продаж дополнительных услуг и домашнего ухода</span>
                   </li>
@@ -191,22 +192,22 @@
 
         <section class="benefits">
           <div class="container">
-            <h2 class="main-subtitle">МОБИЛЬНОЕ ПРИЛОЖЕНИЕ ДЛЯ ОНЛАЙН-ОБУЧЕНИЯ</h2>
-            <span class="description">6 преимуществ дистанционных программ</span>
+            <h2 class="main-subtitle revealator-slideright revealator-delay2 revealator-once revealator-below">МОБИЛЬНОЕ ПРИЛОЖЕНИЕ ДЛЯ ОНЛАЙН-ОБУЧЕНИЯ</h2>
+            <span class="description revealator-slideright revealator-delay2 revealator-once revealator-below">6 преимуществ дистанционных программ</span>
 
             <div class="benefits__content">
               <div class="benefits__cols">
                 <div class="benefits__cols-item">
                   <ul class="benefits__list">
-                    <li class="benefits__list-item">
+                    <li class="benefits__list-item revealator-slidedown revealator-once revealator-once revealator-below">
                       <div class="benefits__list-text">
                         <span>МОБИЛЬНО</span>
-                        <p>Скачиваете удобное мобильное приложение для обучения</p>
+                        <div>Скачиваете удобное мобильное приложение для обучения</div>
                       </div>
                       <div class="benefits__list-icon"><img src="./img/icons/mobile.svg" atl="icon" /></div>
                     </li>
 
-                    <li class="benefits__list-item">
+                    <li class="benefits__list-item revealator-slidedown revealator-once revealator-delay1 revealator-once revealator-below">
                       <div class="benefits__list-text">
                         <span>УДОБНО</span>
                         <p>Обучаетесь в удобное для вас время. Короткие видеоуроки позволяют схватывать на лету.</p>
@@ -214,7 +215,7 @@
                       <div class="benefits__list-icon"><img src="./img/icons/clock.svg" atl="icon" /></div>
                     </li>
 
-                    <li class="benefits__list-item">
+                    <li class="benefits__list-item revealator-slidedown revealator-once revealator-delay2 revealator-once revealator-below">
                       <div class="benefits__list-text">
                         <span>ДОМАШНИЕ ЗАДАНИЯ</span>
                         <p>Выполняете интересные упражнения на отработку пройденного материала</p>
@@ -225,12 +226,12 @@
                 </div>
 
                 <div class="benefits__cols-item">
-                  <div class="benefits__cols-img"><img src="./img/people/mob-app-img.png" alt="image mobile app" /></div>
+                  <div class="benefits__cols-img revealator-slideright revealator-delay1 revealator-once revealator-below"><img src="./img/people/mob-app-img.png" alt="image mobile app" /></div>
                 </div>
 
                 <div class="benefits__cols-item">
                   <ul class="benefits__list">
-                    <li class="benefits__list-item">
+                    <li class="benefits__list-item revealator-slidedown revealator-once revealator-delay3 revealator-once revealator-below">
                       <div class="benefits__list-icon"><img src="./img/icons/bubble-chat.svg" atl="icon" /></div>
                       <div class="benefits__list-text_left">
                         <span>ОБРАТНАЯ СВЯЗЬ</span>
@@ -238,7 +239,7 @@
                       </div>
                     </li>
 
-                    <li class="benefits__list-item">
+                    <li class="benefits__list-item revealator-slidedown revealator-once revealator-delay4 revealator-once revealator-below">
                       <div class="benefits__list-icon"><img src="./img/icons/people.svg" atl="icon" /></div>
                       <div class="benefits__list-text_left">
                         <span>ПОДДЕРЖКА</span>
@@ -246,7 +247,7 @@
                       </div>
                     </li>
 
-                    <li class="benefits__list-item">
+                    <li class="benefits__list-item revealator-slidedown revealator-once revealator-delay5 revealator-once revealator-below">
                       <div class="benefits__list-icon"><img src="./img/icons/test.svg" atl="icon" /></div>
                       <div class="benefits__list-text_left">
                         <span>СКРИПТЫ</span>
@@ -309,7 +310,7 @@
               </ul>
 
               <div class="partners__actions">
-                <button class="btn">В МАГАЗИН КУРСОВ</button>
+                <button class="btn btn-animations">В МАГАЗИН КУРСОВ</button>
               </div>
             </div>
           </div>
@@ -433,12 +434,12 @@
             <div class="footer__item">
               <nav>
                 <ul class="footer__list">
-                  <li class="footer__list-item"><a href="#">Главная</a></li>
-                  <li class="footer__list-item"><a href="#">Магазин</a></li>
-                  <li class="footer__list-item"><a href="#">Вопросы-Ответы</a></li>
-                  <li class="footer__list-item"><a href="#">Новости</a></li>
-                  <li class="footer__list-item"><a href="#">Блог</a></li>
-                  <li class="footer__list-item"><a href="#">Информация</a></li>
+                  <li class="footer__list-item"><a href="./index.html">Главная</a></li>
+                  <li class="footer__list-item"><a href="./courses.html">Магазин</a></li>
+                  <li class="footer__list-item"><a href="./faq.html">Вопросы-Ответы</a></li>
+                  <li class="footer__list-item"><a href="./news.html">Новости</a></li>
+                  <li class="footer__list-item"><a href="./blog.html">Блог</a></li>
+                  <li class="footer__list-item"><a href="./policy.html">Информация</a></li>
                 </ul>
               </nav>
             </div>
@@ -458,5 +459,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/fm.revealator.jquery.min.js"></script>
   </body>
 </html>

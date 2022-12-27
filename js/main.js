@@ -51,21 +51,43 @@ function openModal() {
   const btn = document.getElementById("openModal");
   const closeBtn = document.getElementsByClassName("modal__close")[0];
 
-  btn.onclick = function () {
-    modal.style.display = "block";
-    body.style.overflow = "hidden";
-  };
+  // btn.addEventListener("click", () => {
+  //   modal.style.display = "block";
+  //   body.style.overflow = "hidden";
+  // });
 
-  closeBtn.onclick = function () {
-    modal.style.display = "none";
-    body.style.overflow = "auto";
-  };
+  // closeBtn.addEventListener("click", () => {
+  //   modal.style.display = "none";
+  //   body.style.overflow = "auto";
+  // });
 
-  window.onclick = function (event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  };
+  // window.onclick = function (event) {
+  //   if (event.target == modal) {
+  //     modal.style.display = "none";
+  //   }
+  // };
 }
 
 openModal();
+
+/*анимация чисел*/
+
+const time = 1000;
+
+function outNum(num, elem, step) {
+  let one = document.querySelector("#" + elem);
+  let n = 0;
+  let t = Math.round(time / (num / step));
+
+  let interval = setInterval(() => {
+    n = n + step;
+    if (n == num) {
+      clearInterval(interval);
+    }
+    one.innerHTML = n;
+  }, t);
+}
+
+outNum(14, "out-1", 1);
+outNum(2000, "out-2", 100);
+outNum(20000, "out-3", 1000);

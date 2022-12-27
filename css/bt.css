@@ -90,3 +90,45 @@
   background-color: #fff;
   color: #34558b;
 }
+
+.accordion-button.collapsed {
+  word-break: break-word;
+}
+
+.accordion-header {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.accordion-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 18px;
+  z-index: 10;
+  cursor: pointer;
+  transform: rotate(0);
+  transition: all ease-in-out 0.3s;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.accordion-item-icon:hover {
+  background-color: #eeeeee;
+}
+
+.accordion-button {
+  padding: 1rem 4rem 1.25rem 1rem;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-button:not(.collapsed) .accordion-item-icon {
+  transform: rotate(-45deg);
+  transition: all ease-in-out 0.3s;
+}

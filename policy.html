@@ -25,7 +25,7 @@
               <li class="nav__item"><a href="./courses.html">Курсы</a></li>
               <li class="nav__item"><a href="./faq.html">Вопросы-Ответы</a></li>
               <li class="nav__item logo-wrap">
-                <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+                <a href="./index.html"><img src="./img/logo.png" alt="logo" /></a>
               </li>
               <li class="nav__item"><a href="./news.html">Новости</a></li>
               <li class="nav__item"><a href="./blog.html">Блог</a></li>
@@ -36,7 +36,7 @@
 
         <nav class="header-mobile" id="NavBar">
           <div class="nav__wrap">
-            <a class="navbar-brand" href="#">Меню</a>
+            <span class="navbar-brand">Меню</span>
             <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="icon-bar top-bar"></span>
               <span class="icon-bar middle-bar"></span>
@@ -46,14 +46,14 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav nav-mobile">
               <li class="nav__item logo-wrap">
-                <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+                <a href="./index.html"><img src="./img/logo.png" alt="logo" /></a>
               </li>
-              <li class="nav__item"><a href="#">Главная</a></li>
-              <li class="nav__item"><a href="#">Курсы</a></li>
-              <li class="nav__item"><a href="#">Вопросы-Ответы</a></li>
-              <li class="nav__item"><a href="#">Новости</a></li>
-              <li class="nav__item"><a href="#">Блог</a></li>
-              <li class="nav__item"><a href="#">Информация</a></li>
+              <li class="nav__item"><a href="./index.html">Главная</a></li>
+              <li class="nav__item"><a href="./courses.html">Курсы</a></li>
+              <li class="nav__item"><a href="./faq.html">Вопросы-Ответы</a></li>
+              <li class="nav__item"><a href="./news.html">Новости</a></li>
+              <li class="nav__item"><a href="./blog.html">Блог</a></li>
+              <li class="nav__item"><a href="./policy.html">Информация</a></li>
             </ul>
           </div>
         </nav>
@@ -67,9 +67,21 @@
             <ul class="accordion" id="accordionPanelsStayOpenExample">
               <li class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">1. ОПРЕДЕЛЕНИЕ ПОНЯТИЙ</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                    1. ОПРЕДЕЛЕНИЕ ПОНЯТИЙ
+                    <div class="accordion-item-icon">
+                      <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                          <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                            <path d="M0,11 L22,11"></path>
+                            <path d="M11,0 L11,22"></path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </button>
                 </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
                   <div class="accordion-body">
                     <p>Закон" означает Федеральный закон Российской Федерации "О персональных данных" со всеми изменениями и дополнениями, а также иные законодательные акты Российской Федерации.</p>
                     <p>
@@ -93,9 +105,63 @@
                   </div>
                 </div>
               </li>
+
+              <!-- <li class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    1. ОПРЕДЕЛЕНИЕ ПОНЯТИЙ
+                    <div class="accordion-item-icon">
+                      <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                          <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                            <path d="M0,11 L22,11"></path>
+                            <path d="M11,0 L11,22"></path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body">
+                    <p>Закон" означает Федеральный закон Российской Федерации "О персональных данных" со всеми изменениями и дополнениями, а также иные законодательные акты Российской Федерации.</p>
+                    <p>
+                      "Контроллер" означает лицо, которое является ответственным за обработку и защиту Персональных данных Пользователей, находящихся на территории ЕС в понимании Общего регламента защиты персональных данных (General Data Protection Regulation) от 27 апреля 2016 года (далее "GDRP").
+                    </p>
+                    <p>
+                      "Сайт" означает информационную единицу в Интернете, ресурс из веб-страниц (документов), которые объединены общей темой и связаны между друг с другом с помощью ссылок. Он зарегистрирован на Правообладателя и обязательно привязан к конкретному домену, являющемуся его адресом.
+                      Настоящая Политика разработана для следующего сайта: https://boombeauty.ispringlearn.ru
+                    </p>
+                    <p>"Персональные данные" означает совокупность личных данных и/или неперсонифицированной информации о Пользователе, предоставляемую им самим Правообладателю и/или автоматически собираемую Правообладателем и/или третьими лицами.</p>
+                    <p>"Политика" означает настоящею Политику конфиденциальности для веб-сайта (со всеми существующими дополнениями и изменениями).</p>
+                    <p>"Пользователь" означает юридическое или физическое лицо, которое пользуется Сайтом и/или получило к нему доступ с какого-либо устройства.</p>
+                    <p>
+                      "Пользовательское соглашение" означает соглашение, заключаемое между Правообладателем и Пользователем в отношении порядка, правил и особенностей использования Сайта. Пользователь присоединяется к такому соглашению и не имеет права вносить и/или требовать внесения в него
+                      каких-либо изменений или дополнений.
+                    </p>
+                    <p>"Правообладатель" означает следующее лицо, на имя которого зарегистрирован Сайт:</p>
+                    <p>ООО "Бум Бьюти", ИНН 4703181164, КПП 470301001, ОГРН 1214700002065. Ленинградская обл, Всеволожский р-н, Гарболово, 254-53 +7 (499) 992-08-05. Email: info@romantyrsin.ru</p>
+                    <p>"Процессор" означает лицо, которое в понимании GDRP по поручению Контроллера выполняет хранение и/или обработку Персональных данных, полученных от Пользователей.</p>
+                    <p>"Файлы куки" означает небольшие файлы, отправляемые каким-либо сайтом, и размещаемые на компьютерах, смартфонах, планшетах, часах и других мобильных устройствах Пользователя, для улучшения работы сайтов, а также качества размещенного в них контента.</p>
+                  </div>
+                </div>
+              </li> -->
+
               <li class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">2. ОТНОШЕНИЯ, НА КОТОРЫЕ РАСПРОСТРАНЯЕТСЯ ПОЛИТИКА</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    2. ОТНОШЕНИЯ, НА КОТОРЫЕ РАСПРОСТРАНЯЕТСЯ ПОЛИТИКА
+                    <div class="accordion-item-icon">
+                      <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                          <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                            <path d="M0,11 L22,11"></path>
+                            <path d="M11,0 L11,22"></path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </button>
                 </h2>
                 <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                   <div class="accordion-body">
@@ -107,9 +173,22 @@
                   </div>
                 </div>
               </li>
+
               <li class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">3. ПЕРЕЧЕНЬ СОБИРАЕМЫХ ПЕРСОНАЛЬНЫХ ДАННЫХ</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    3. ПЕРЕЧЕНЬ СОБИРАЕМЫХ ПЕРСОНАЛЬНЫХ ДАННЫХ
+                    <div class="accordion-item-icon">
+                      <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                          <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                            <path d="M0,11 L22,11"></path>
+                            <path d="M11,0 L11,22"></path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </button>
                 </h2>
                 <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                   <div class="accordion-body">
@@ -123,7 +202,19 @@
               </li>
               <li class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">4. ЦЕЛИ СБОРА И ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    4. ЦЕЛИ СБОРА И ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ
+                    <div class="accordion-item-icon">
+                      <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                          <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                            <path d="M0,11 L22,11"></path>
+                            <path d="M11,0 L11,22"></path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </button>
                 </h2>
                 <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
                   <div class="accordion-body">
@@ -137,7 +228,19 @@
               </li>
               <li class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">5. ДОСТУП ТРЕТЬИХ ЛИЦ К ПЕРСОНАЛЬНЫМ ДАННЫМ</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                    5. ДОСТУП ТРЕТЬИХ ЛИЦ К ПЕРСОНАЛЬНЫМ ДАННЫМ
+                    <div class="accordion-item-icon">
+                      <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                          <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                            <path d="M0,11 L22,11"></path>
+                            <path d="M11,0 L11,22"></path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </button>
                 </h2>
                 <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
                   <div class="accordion-body">
@@ -151,7 +254,19 @@
               </li>
               <li class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingSix">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">6. РАЗМЕЩЕНИЕ РЕКЛАМЫ</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                    6. РАЗМЕЩЕНИЕ РЕКЛАМЫ
+                    <div class="accordion-item-icon">
+                      <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                          <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                            <path d="M0,11 L22,11"></path>
+                            <path d="M11,0 L11,22"></path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </button>
                 </h2>
                 <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
                   <div class="accordion-body">
@@ -165,7 +280,19 @@
               </li>
               <li class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">7. НАПРАВЛЕНИЕ ЖАЛОБ И ЗАПРОСОВ ПРАВООБЛАДАТЕЛЮ</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+                    7. НАПРАВЛЕНИЕ ЖАЛОБ И ЗАПРОСОВ ПРАВООБЛАДАТЕЛЮ
+                    <div class="accordion-item-icon">
+                      <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                          <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                            <path d="M0,11 L22,11"></path>
+                            <path d="M11,0 L11,22"></path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </button>
                 </h2>
                 <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
                   <div class="accordion-body">
@@ -179,7 +306,19 @@
               </li>
               <li class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingEight">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">8. СРОКИ И ПОРЯДОК ХРАНЕНИЯ ПЕРСОНАЛЬНЫХ ДАННЫХ</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+                    8. СРОКИ И ПОРЯДОК ХРАНЕНИЯ ПЕРСОНАЛЬНЫХ ДАННЫХ
+                    <div class="accordion-item-icon">
+                      <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                          <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                            <path d="M0,11 L22,11"></path>
+                            <path d="M11,0 L11,22"></path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </button>
                 </h2>
                 <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEight">
                   <div class="accordion-body">
@@ -193,7 +332,19 @@
               </li>
               <li class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingNine">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">9. ДОСТУП НЕСОВЕРШЕННОЛЕТНИХ К САЙТУ</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+                    9. ДОСТУП НЕСОВЕРШЕННОЛЕТНИХ К САЙТУ
+                    <div class="accordion-item-icon">
+                      <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                          <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                            <path d="M0,11 L22,11"></path>
+                            <path d="M11,0 L11,22"></path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </button>
                 </h2>
                 <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNine">
                   <div class="accordion-body">
@@ -207,7 +358,19 @@
               </li>
               <li class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingTen">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">10. ПОРЯДОК ЗАЩИТЫ ПЕРСОНАЛЬНЫХ ДАННЫХ</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+                    10. ПОРЯДОК ЗАЩИТЫ ПЕРСОНАЛЬНЫХ ДАННЫХ
+                    <div class="accordion-item-icon">
+                      <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                          <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                            <path d="M0,11 L22,11"></path>
+                            <path d="M11,0 L11,22"></path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </button>
                 </h2>
                 <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTen">
                   <div class="accordion-body">
@@ -221,7 +384,19 @@
               </li>
               <li class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingEleven">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false" aria-controls="panelsStayOpen-collapseEleven">11. ПОЛЬЗОВАТЕЛИ, НАХОДЯЩИЕСЯ НА ТЕРРИТОРИИ ЕВРОПЕЙСКОГО СОЮЗА</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false" aria-controls="panelsStayOpen-collapseEleven">
+                    11. ПОЛЬЗОВАТЕЛИ, НАХОДЯЩИЕСЯ НА ТЕРРИТОРИИ ЕВРОПЕЙСКОГО СОЮЗА
+                    <div class="accordion-item-icon">
+                      <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                          <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                            <path d="M0,11 L22,11"></path>
+                            <path d="M11,0 L11,22"></path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </button>
                 </h2>
                 <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEleven">
                   <div class="accordion-body">
@@ -235,7 +410,19 @@
               </li>
               <li class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingTwelve">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwelve" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwelve">12. ЗАКЛЮЧИТЕЛЬНЫЕ ПОЛОЖЕНИЯ</button>
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwelve" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwelve">
+                    12. ЗАКЛЮЧИТЕЛЬНЫЕ ПОЛОЖЕНИЯ
+                    <div class="accordion-item-icon">
+                      <svg role="presentation" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                          <g transform="translate(1.000000, 1.000000)" stroke="#222222">
+                            <path d="M0,11 L22,11"></path>
+                            <path d="M11,0 L11,22"></path>
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </button>
                 </h2>
                 <div id="panelsStayOpen-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwelve">
                   <div class="accordion-body">
@@ -262,12 +449,12 @@
             <div class="footer__item">
               <nav>
                 <ul class="footer__list">
-                  <li class="footer__list-item"><a href="#">Главная</a></li>
-                  <li class="footer__list-item"><a href="#">Магазин</a></li>
-                  <li class="footer__list-item"><a href="#">Вопросы-Ответы</a></li>
-                  <li class="footer__list-item"><a href="#">Новости</a></li>
-                  <li class="footer__list-item"><a href="#">Блог</a></li>
-                  <li class="footer__list-item"><a href="#">Информация</a></li>
+                  <li class="footer__list-item"><a href="./index.html">Главная</a></li>
+                  <li class="footer__list-item"><a href="./courses.html">Магазин</a></li>
+                  <li class="footer__list-item"><a href="./faq.html">Вопросы-Ответы</a></li>
+                  <li class="footer__list-item"><a href="./news.html">Новости</a></li>
+                  <li class="footer__list-item"><a href="./blog.html">Блог</a></li>
+                  <li class="footer__list-item"><a href="./policy.html">Информация</a></li>
                 </ul>
               </nav>
             </div>
