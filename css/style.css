@@ -284,6 +284,53 @@ main {
   opacity: 1;
 }
 
+.btn-basket {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  bottom: 40px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.btn-basket:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 15%);
+}
+
+.btn-basket.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn-basket-circle {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #1c1cdb;
+  color: #fff;
+  font-size: 14px;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  padding: 2px 0px 0px 0px;
+  top: -10px;
+  right: -10px;
+}
+
 .link {
   color: #1c1cdb;
 }
