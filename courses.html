@@ -17,7 +17,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <button onclick="scrollToTop()" class="btn-basket">
+      <button class="btn-basket">
         <svg class="icon-default" width="36" height="30" viewBox="0 0 36 30" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fill-rule="evenodd">
             <path d="M7 7h22v18a4 4 0 0 1-4 4H11a4 4 0 0 1-4-4V7z" stroke="currentColor" stroke-width="2"></path>
@@ -76,7 +76,7 @@
             <p class="description">Программы разделены на блоки по специализации для вашего удобства</p>
 
             <ul class="tabs">
-              <li data-tab="tab-1" class="tabs__item"><a href="#dlya-rukovoditelya">Для руководителя</a></li>
+              <li data-tab="tab-1" class="tabs__item"><a>Для руководителя</a></li>
               <li data-tab="tab-2" class="tabs__item"><a>Для команды</a></li>
               <li data-tab="tab-3" class="tabs__item"><a>Для администратора</a></li>
               <li data-tab="tab-4" class="tabs__item"><a>Для мастера (специалиста)</a></li>
@@ -84,7 +84,7 @@
             </ul>
 
             <div class="tabs__content">
-              <div id="tab-home" class="tabs__content-item">
+              <div id="tab-home" class="tabs__content-item item-home hidden">
                 <ul class="big-cards">
                   <li class="big-cards__item">
                     <div class="big-cards__wrap">
@@ -123,7 +123,7 @@
                 <h2 class="tabs__content-title">Для руководителя</h2>
                 <div class="breadcrumbs">
                   <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__list-item"><a href="#">Магазин</a></li>
+                    <li class="breadcrumbs__list-item"><button class="breadcrumbs__list-back">Магазин</button></li>
                     <li class="breadcrumbs__list-item"><a href="#">Для руководителя</a></li>
                   </ul>
                 </div>
@@ -219,7 +219,7 @@
                 <h2 class="tabs__content-title">Для команды</h2>
                 <div class="breadcrumbs">
                   <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__list-item"><a href="#">Магазин</a></li>
+                    <li class="breadcrumbs__list-item"><button class="breadcrumbs__list-back">Магазин</button></li>
                     <li class="breadcrumbs__list-item"><a href="#">Для команды</a></li>
                   </ul>
                 </div>
@@ -316,7 +316,7 @@
                 <h2 class="tabs__content-title">Для администратора</h2>
                 <div class="breadcrumbs">
                   <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__list-item"><a href="#">Магазин</a></li>
+                    <li class="breadcrumbs__list-item"><button class="breadcrumbs__list-back">Магазин</button></li>
                     <li class="breadcrumbs__list-item"><a href="#">Для администратора</a></li>
                   </ul>
                 </div>
@@ -413,7 +413,7 @@
                 <h2 class="tabs__content-title">Для мастера (специалиста)</h2>
                 <div class="breadcrumbs">
                   <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__list-item"><a href="#">Магазин</a></li>
+                    <li class="breadcrumbs__list-item"><button class="breadcrumbs__list-back">Магазин</button></li>
                     <li class="breadcrumbs__list-item"><a href="#">Для мастера (специалиста)</a></li>
                   </ul>
                 </div>
@@ -510,7 +510,7 @@
                 <h2 class="tabs__content-title">Для дистрибьюторов</h2>
                 <div class="breadcrumbs">
                   <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__list-item"><a href="#">Магазин</a></li>
+                    <li class="breadcrumbs__list-item"><button class="breadcrumbs__list-back">Магазин</button></li>
                     <li class="breadcrumbs__list-item"><a href="#">Для дистрибьюторов</a></li>
                   </ul>
                 </div>
@@ -600,6 +600,226 @@
                       </div>
                     </li>
                   </ul>
+                </div>
+              </div>
+
+              <div id="tab-6" class="tabs__content-item">
+                <div class="breadcrumbs">
+                  <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item"><button class="breadcrumbs__list-back">Магазин</button></li>
+                    <li class="breadcrumbs__list-item"><a href="#">Для дистрибьюторов</a></li>
+                  </ul>
+                </div>
+
+                <div class="slider-products">
+                  <div class="slider__item">
+                    <div class="detail-product">
+                      <div class="detail-product__top">
+                        <div class="detail-product__img"><img src="./img/courses/2839996364.jpg" alt="image" /></div>
+                        <div>
+                          <h3 class="detail-product__title">КОЛЕСО УСПЕХА</h3>
+
+                          <span>Информация о товаре</span>
+                          <p class="detail-product__text">Комплексная объемная программа для руководителей, которая поможет избежать ошибок в управлении салоном красоты и поможет вывести ваш бизнес в состояние стабильного роста.</p>
+
+                          <p class="detail-product__text">
+                            Программа курса состоит из 8-ми блоков: стратегия, маркетинг, продажи, сервис, персонал, репутация, связь с клиентом и развитие для вашего салона красоты. Каждый блок включает в себя самые актуальные инструменты для развития вашего салона красоты, отработанные на практике
+                            более 100 салонов красоты и доказавшие свою максимальную эффективность.
+                          </p>
+
+                          <p class="detail-product__text">Доступ к программе предоставляется на 6 месяцев с возможностью продления.</p>
+                        </div>
+                        <div class="detail-product__price-block">
+                          <span class="detail-product__price">24 500₽</span>
+                          <span class="detail-product__marker">Онлайн</span>
+                          <p class="detail-product__text">Комплексная программа поддержки, обучения и сопровождения руководителя на пути к успеху</p>
+                          <strong>1 товар в корзине</strong>
+                          <div class="detail-product__actions">
+                            <button class="detail-product__btn btn-red">Добавить ещё</button>
+                            <button class="detail-product__btn btn-gray">Корзина</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="detail-product__bottom">
+                        <span>Возможно, вас заинтересует</span>
+
+                        <div class="products">
+                          <ul class="products__list">
+                            <li class="products__list-item">
+                              <div class="products__list-item-flag flag-blue">Онлайн</div>
+
+                              <div class="products__list-item-image">
+                                <img src="./img/courses/2839996364.jpg" alt="КОЛЕСО УСПЕХА" />
+                              </div>
+
+                              <div class="products__list-item-wrap">
+                                <div class="products__list-item-top">
+                                  <span class="products__list-item-title">КОЛЕСО УСПЕХА</span>
+                                  <p class="products__list-item-text">Комплексная программа поддержки, обучения и сопровождения руководителя на пути к успеху</p>
+                                </div>
+                                <div class="products__list-item-bottom">
+                                  <span class="products__list-item-price">24 500₽</span>
+                                  <button class="btn-transparent">В корзину</button>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="products__list-item">
+                              <div class="products__list-item-flag flag-red">Оффлайн</div>
+
+                              <div class="products__list-item-image">
+                                <img src="./img/courses/3367874123.jpg" alt="КОЛЕСО УСПЕХА" />
+                              </div>
+
+                              <div class="products__list-item-wrap">
+                                <div class="products__list-item-top">
+                                  <span class="products__list-item-title">СЕРВИС БУДУЩЕГО</span>
+                                  <p class="products__list-item-text">Программа для будущего развития и роста вашего салона красоты</p>
+                                </div>
+                                <div class="products__list-item-bottom">
+                                  <span class="products__list-item-price">7 500₽</span>
+                                  <button class="btn-transparent">В корзину</button>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="products__list-item">
+                              <div class="products__list-item-flag flag-pink">Пособия</div>
+
+                              <div class="products__list-item-image">
+                                <img src="./img/courses/3155319688.jpg" alt="КОЛЕСО УСПЕХА" />
+                              </div>
+
+                              <div class="products__list-item-wrap">
+                                <div class="products__list-item-top">
+                                  <span class="products__list-item-title">НАБОР ПОСОБИЙ</span>
+                                  <p class="products__list-item-text">Набор из 4-х печатных пособий по специальной цене</p>
+                                </div>
+                                <div class="products__list-item-bottom">
+                                  <div class="discount">
+                                    <div>
+                                      было
+                                      <s>6 500</s>
+                                    </div>
+                                    <div>Скидка 25%</div>
+                                  </div>
+                                  <span class="products__list-item-price">4 900₽</span>
+                                  <button class="btn-transparent">В корзину</button>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="products__list-item">
+                              <div class="products__list-item-flag flag-blue">Онлайн</div>
+
+                              <div class="products__list-item-image">
+                                <img src="./img/courses/2839996364.jpg" alt="КОЛЕСО УСПЕХА" />
+                              </div>
+
+                              <div class="products__list-item-wrap">
+                                <div class="products__list-item-top">
+                                  <span class="products__list-item-title">КОЛЕСО УСПЕХА</span>
+                                  <p class="products__list-item-text">Комплексная программа поддержки, обучения и сопровождения руководителя на пути к успеху</p>
+                                </div>
+                                <div class="products__list-item-bottom">
+                                  <span class="products__list-item-price">24 500₽</span>
+                                  <button class="btn-transparent">В корзину</button>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__item">
+                    <h3 class="tabs__content-subtitle">Программы для руководителей салонов красоты, клиник и СПА</h3>
+                    <p class="tabs__content-description">Оффлайн или онлайн тренинги и курсы для всего персонала</p>
+
+                    <span>Возможно, вас заинтересует</span>
+
+                    <div class="products">
+                      <ul class="products__list">
+                        <li class="products__list-item">
+                          <div class="products__list-item-flag flag-blue">Онлайн</div>
+
+                          <div class="products__list-item-image">
+                            <img src="./img/courses/2839996364.jpg" alt="КОЛЕСО УСПЕХА" />
+                          </div>
+
+                          <div class="products__list-item-wrap">
+                            <div class="products__list-item-top">
+                              <span class="products__list-item-title">КОЛЕСО УСПЕХА</span>
+                              <p class="products__list-item-text">Комплексная программа поддержки, обучения и сопровождения руководителя на пути к успеху</p>
+                            </div>
+                            <div class="products__list-item-bottom">
+                              <span class="products__list-item-price">24 500₽</span>
+                              <button class="btn-transparent">В корзину</button>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="products__list-item">
+                          <div class="products__list-item-flag flag-red">Оффлайн</div>
+
+                          <div class="products__list-item-image">
+                            <img src="./img/courses/3367874123.jpg" alt="КОЛЕСО УСПЕХА" />
+                          </div>
+
+                          <div class="products__list-item-wrap">
+                            <div class="products__list-item-top">
+                              <span class="products__list-item-title">СЕРВИС БУДУЩЕГО</span>
+                              <p class="products__list-item-text">Программа для будущего развития и роста вашего салона красоты</p>
+                            </div>
+                            <div class="products__list-item-bottom">
+                              <span class="products__list-item-price">7 500₽</span>
+                              <button class="btn-transparent">В корзину</button>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="products__list-item">
+                          <div class="products__list-item-flag flag-pink">Пособия</div>
+
+                          <div class="products__list-item-image">
+                            <img src="./img/courses/3155319688.jpg" alt="КОЛЕСО УСПЕХА" />
+                          </div>
+
+                          <div class="products__list-item-wrap">
+                            <div class="products__list-item-top">
+                              <span class="products__list-item-title">НАБОР ПОСОБИЙ</span>
+                              <p class="products__list-item-text">Набор из 4-х печатных пособий по специальной цене</p>
+                            </div>
+                            <div class="products__list-item-bottom">
+                              <div class="discount">
+                                <div>
+                                  было
+                                  <s>6 500</s>
+                                </div>
+                                <div>Скидка 25%</div>
+                              </div>
+                              <span class="products__list-item-price">4 900₽</span>
+                              <button class="btn-transparent">В корзину</button>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="products__list-item">
+                          <div class="products__list-item-flag flag-blue">Онлайн</div>
+
+                          <div class="products__list-item-image">
+                            <img src="./img/courses/2839996364.jpg" alt="КОЛЕСО УСПЕХА" />
+                          </div>
+
+                          <div class="products__list-item-wrap">
+                            <div class="products__list-item-top">
+                              <span class="products__list-item-title">КОЛЕСО УСПЕХА</span>
+                              <p class="products__list-item-text">Комплексная программа поддержки, обучения и сопровождения руководителя на пути к успеху</p>
+                            </div>
+                            <div class="products__list-item-bottom">
+                              <span class="products__list-item-price">24 500₽</span>
+                              <button class="btn-transparent">В корзину</button>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

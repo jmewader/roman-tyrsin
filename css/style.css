@@ -19,14 +19,14 @@
   src: url("/fonts/CirceRounded-Regular.woff") format("woff");
 }
 
-@font-face {
+/* @font-face {
   font-family: "RTRootUI";
   font-style: bold;
   font-weight: 700;
   src: url("/fonts/RTRootUI-Bold.woff") format("woff");
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: "RTRootUI";
   font-style: bold;
   font-weight: 500;
@@ -38,7 +38,7 @@
   font-style: normal;
   font-weight: 400;
   src: url("/fonts/RTRootUI-Regular.woff") format("woff");
-}
+} */
 
 html,
 body {
@@ -299,8 +299,8 @@ main {
   background-color: #fff;
   border-radius: 8px;
   cursor: pointer;
-  visibility: hidden;
-  opacity: 0;
+  /* visibility: hidden;
+  opacity: 0; */
   transition: 0.25s;
 }
 
@@ -385,6 +385,7 @@ main {
   transition: color 0.12s ease-out 0s;
   font-size: 17px;
   font-family: "RTRootUI", sans-serif;
+  transition: 0.25s;
 }
 
 .breadcrumbs__list-item::after {
@@ -394,6 +395,17 @@ main {
 
 .breadcrumbs__list-item:last-child::after {
   content: "";
+}
+
+.breadcrumbs__list-back {
+  color: #757575;
+  border: none;
+  background-color: transparent;
+}
+
+.breadcrumbs__list-item:hover,
+.breadcrumbs__list-back:hover {
+  color: #1c1cdb;
 }
 
 .nav {
@@ -1261,4 +1273,74 @@ main {
 
 .item-ok {
   background-color: #ff9f4d;
+}
+
+/*detail product*/
+
+.detail-product {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.detail-product__top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 40px;
+}
+
+.detail-product__price-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-product__price {
+  font-size: 26px;
+}
+
+.detail-product__img {
+}
+
+.detail-product__img img {
+  width: 100%;
+}
+
+.detail-product__actions {
+  margin: 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.detail-product__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 296px;
+  min-height: 50px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  font-weight: 600;
+  text-align: center;
+  word-wrap: break-word;
+  transition: 0.25s;
+  color: #fff;
+}
+
+.btn-red {
+  background-color: #ed0e0e;
+}
+
+.btn-red:hover {
+  background-color: #e622c1;
+}
+
+.btn-gray {
+  background-color: #333;
+}
+
+.btn-gray:hover {
+  background-color: #595959;
 }
