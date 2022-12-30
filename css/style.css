@@ -1151,11 +1151,29 @@ main {
   margin: 0 0 8px;
 }
 
+.info-block__subtitle {
+  display: flex;
+  font-size: 26px;
+  line-height: 1.23;
+  font-weight: 700;
+  margin: 30px 0 30px;
+}
+
 .info-block__description {
   font-size: 20px;
   color: rgb(10, 10, 10);
   font-weight: 700;
   margin: 0 0 28px;
+}
+
+.info-block__list li {
+  font-size: 18px;
+}
+
+.info-block__list li::marker {
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0;
 }
 
 .info-block__text {
